@@ -1,0 +1,10 @@
+import pandas as pd
+
+hours = float(input("Enter hours studied: "))
+
+prediction = model.predict(pd.DataFrame({'hours_studied': [hours]}))[0]
+
+if prediction == 1:
+    print("Prediction: Pass")
+else:
+    print("Prediction: Fail")
